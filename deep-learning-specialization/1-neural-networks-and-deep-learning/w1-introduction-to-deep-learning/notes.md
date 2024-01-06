@@ -11,3 +11,29 @@
 - The neural network has an input layer (with features) and hidden layers that are densely connected.
 - Neural networks, given enough training data, can learn to accurately map inputs to outputs.
 - The focus is on supervised learning, where the network learns to map input $(x)$ to output $(y)$.
+
+### Supervised Learning with Neural Network
+
+- **Introduction to Neural Networks:**
+  - Hype surrounding neural networks and their effectiveness.
+  - Emphasis on economic value from supervised learning.
+
+- **Supervised Learning Basics:**
+  - Definition of supervised learning: input x, output y.
+  - Examples include housing price prediction and online advertising.
+
+- **Applications of Neural Networks:**
+  - Online advertising as a lucrative application.
+  - Advances in computer vision, speech recognition, machine translation, and autonomous driving.
+
+- **Neural Network Architectures:**
+  - Different architectures for various applications.
+  - Standard neural networks, convolutional neural networks (CNN), and recurrent neural networks (RNN).
+
+- **Structured vs. Unstructured Data:**
+  - Structured data involves well-defined features (e.g., housing data).
+  - Unstructured data includes audio, images, and text; improved interpretation by neural networks.
+
+- **Economic Value of Neural Networks:**
+  - Short-term economic value in structured data (e.g., advertising systems).
+  - Recognition of neural network successes in unstructured data.
