@@ -37,3 +37,15 @@
 - **Economic Value of Neural Networks:**
   - Short-term economic value in structured data (e.g., advertising systems).
   - Recognition of neural network successes in unstructured data.
+ 
+### Why is Deep Learning Taking Off
+- Deep learning's recent success is attributed to the increase in available data and the ability to train larger neural networks.
+- The digitization of society has led to a significant growth in digital data, thanks to activities on computers, websites, mobile apps, and IoT devices.
+- The performance of traditional learning algorithms like support vector machines plateaus as data increases, while deep neural networks continue to improve with more data.
+- The key factors for achieving high performance in deep learning are the scale of both the neural network (size of hidden units and parameters) and the amount of data.
+- In smaller training sets, the relative ordering of algorithms is less defined, and performance relies on skill in feature engineering.
+- In the big data regime, large neural networks consistently outperform other approaches.
+- Initially, the rise of deep learning was driven by scaled data and computation, enabling the training of very large neural networks.
+- Algorithmic innovations, such as the shift from sigmoid to ReLU activation functions, have played a crucial role in accelerating learning and improving computation efficiency.
+- Fast computation is essential for rapid experimentation, allowing practitioners and researchers to iterate on ideas quickly.
+- Ongoing forces, such as the continuous growth of digital data, advancements in specialized hardware (e.g., GPUs), and ongoing algorithmic innovations, suggest that deep learning will continue to improve in the future.
