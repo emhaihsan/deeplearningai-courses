@@ -1,3 +1,6 @@
-### LangChain for LLM Application Development
-<img src="https://deepsense.ai/wp-content/uploads/2023/10/LangChain-announces-partnership-with-deepsense.jpeg" alt="drawing" height="200"/>
-This course introduces LangChain, an open-source development framework designed for building applications using large language models (LLMs). LangChain simplifies the development process of AI applications by addressing the challenge of multiple prompts and output parsing, reducing the need for extensive glue code. The framework offers Python and JavaScript packages, emphasizing composition, modularity, and a variety of use cases. The course covers LangChain's components, including models, prompts, indexes for data ingestion, chains for end-to-end use cases, and agents employing models as reasoning engines. The framework's momentum is highlighted by its growing community of users and contributors, showcasing rapid development.
+### Specialization
+* Deep Learning Specializatino
+### Short Course
+* LangChain for LLM App Development
+### Webinar
+* Efficient Fine-Tuning for Llama-v2-7b on a Single GPU
