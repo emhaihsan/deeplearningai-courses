@@ -1,7 +1,5 @@
 ### Binary Classification
 
-Here are the 10 key points summarized from the transcript:
-
 1. **Processing Training Sets:** Instead of using explicit for loops to iterate through training examples, it suggests processing the entire training set efficiently without explicit loops.
 
 2. **Forward and Backward Pass:** Neural network computation involves a forward pass (forward propagation) and a backward pass (backward propagation), each serving distinct purposes in the learning process.
@@ -35,8 +33,6 @@ Here are the 10 key points summarized from the transcript:
 
 ### Logistic Regression Cost Function
 
-Certainly! Here's a summary of the provided transcript in 10 bullet points using LaTeX notation:
-
 1. Logistic regression model for training parameters \(W\) and \(B\).
 
    - \(\hat{Y} = \sigma(W^T X + B)\), where \(\sigma(Z)\) is the sigmoid function.
@@ -61,11 +57,11 @@ Certainly! Here's a summary of the provided transcript in 10 bullet points using
 
 ### Gradient Descent
 
-Certainly! Here's a summary of the provided transcript in 10 bullet points using LaTeX notation:
-
 1. Overview of logistic regression model, loss function for single training example, and cost function for entire training set.
 
-   - \(\text{Logistic Regression: } \hat{y}_i\), \(\text{Loss Function: } \ell(y_i, \hat{y}\_i)\), \(\text{Cost Function: } J(\mathbf{W}, B) = \frac{1}{m} \sum_{i=1}^{m} \ell(y_i, \hat{y}\_i)\)
+   - \(\text{Logistic Regression: } \hat{y}\_i\)
+   - \(\text{Loss Function: } \ell(y_i, \hat{y}\_i)\)
+   - \(\text{Cost Function: } J(\mathbf{W}, B) = \frac{1}{m} \sum\_{i=1}^{m} \ell(y_i, \hat{y}\_i)\)
 
 2. Gradient descent algorithm for training parameters \(\mathbf{W}\) on the training set.
 
@@ -86,3 +82,23 @@ Certainly! Here's a summary of the provided transcript in 10 bullet points using
 9. Extension to logistic regression with parameters \(\mathbf{W}\) and \(B\): Update equations for both \(\mathbf{W}\) and \(B\).
 
 10. Note on calculus notation: Use of partial derivative symbol (\(\partial\)) for functions with multiple variables, and convention in code (\(\text{dw, db}\)) for update quantities.
+
+### Derivative
+
+1. The video aims to provide an intuitive understanding of calculus and derivatives, even for those who haven't encountered calculus since college.
+
+2. Deep learning applications don't necessarily require a deep understanding of calculus; the focus is on practical implementation.
+
+3. Viewers are encouraged to watch the videos and attempt homework and programming tasks to effectively apply deep learning.
+
+4. In week four, forward and backward functions will be introduced, simplifying calculus concepts for practical use in deep learning.
+
+5. A brief exploration of derivatives begins by examining the function \(f(a) = 3a\).
+
+6. A small change in \(a\) (0.001 to the right) results in a proportionally larger change in \(f(a)\), illustrating the concept of slope or derivative.
+
+7. The slope, or derivative, of the function \(f(a)\) at \(a = 2\) is found to be three, indicating that nudging \(a\) by 0.001 results in \(f(a)\) changing by three times as much.
+
+8. The formal definition of derivatives involves an infinitesimally small change in \(a\), but for simplicity, the text focuses on the practical concept of nudging \(a\) by 0.001.
+
+9. The function \(f(a) = 3a\) has a consistent slope of three at all points, demonstrating a constant rate of change regardless of the value of \(a\).
