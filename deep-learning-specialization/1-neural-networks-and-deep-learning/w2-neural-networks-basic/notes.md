@@ -32,3 +32,57 @@ Here are the 10 key points summarized from the transcript:
 8. Notation: In some conventions, an extra feature \(X_0\) is defined as 1, resulting in \(X\) being in \(\mathbb{R}^{NX+1}\). However, this course maintains separate parameters \(W\) and \(B\) instead.
 9. Neural network implementation in this course keeps parameters \(W\) and \(B\) separate, avoiding the alternative notation mentioned in red.
 10. To optimize logistic regression, a cost function needs to be defined to determine how well the algorithm's predictions match the actual outcomes.
+
+### Logistic Regression Cost Function
+
+Certainly! Here's a summary of the provided transcript in 10 bullet points using LaTeX notation:
+
+1. Logistic regression model for training parameters \(W\) and \(B\).
+
+   - \(\hat{Y} = \sigma(W^T X + B)\), where \(\sigma(Z)\) is the sigmoid function.
+
+2. Objective: Find \(W\) and \(B\) that make predictions (\(\hat{Y}\)) close to ground truth labels (\(Y\)) on the training set.
+
+3. Introduction of superscript notation \((I)\) to index into different training examples.
+
+4. Consideration of squared error loss, but its non-convex nature in logistic regression leads to alternative loss function.
+
+5. Logistic regression loss function: \(-[Y \log(\hat{Y}) + (1 - Y) \log(1 - \hat{Y})]\).
+
+6. Intuition behind the loss function: Encourages large \(\hat{Y}\) for \(Y = 1\) and small \(\hat{Y}\) for \(Y = 0\).
+
+7. Loss function defined for a single training example; it measures how well the algorithm performs on that example.
+
+8. Introduction of cost function \(J(W, B)\): Average of loss function over entire training set.
+
+9. Cost function formula: \(J(W, B) = -\frac{1}{m} \sum\_{i=1}^{m} [Y_i \log(\hat{Y}_i) + (1 - Y_i) \log(1 - \hat{Y}_i)]\).
+
+10. Objective in training logistic regression: Minimize the cost function \(J(W, B)\) to obtain optimal parameters.
+
+### Gradient Descent
+
+Certainly! Here's a summary of the provided transcript in 10 bullet points using LaTeX notation:
+
+1. Overview of logistic regression model, loss function for single training example, and cost function for entire training set.
+
+   - \(\text{Logistic Regression: } \hat{y}_i\), \(\text{Loss Function: } \ell(y_i, \hat{y}\_i)\), \(\text{Cost Function: } J(\mathbf{W}, B) = \frac{1}{m} \sum_{i=1}^{m} \ell(y_i, \hat{y}\_i)\)
+
+2. Gradient descent algorithm for training parameters \(\mathbf{W}\) on the training set.
+
+   - \(\text{Gradient Descent: } \mathbf{W} \coloneqq \mathbf{W} - \alpha \frac{1}{m} \sum\_{i=1}^{m} \nabla J(\mathbf{W}, B)\)
+
+3. Visualization of cost function \(J(\mathbf{W}, B)\) as a convex surface in parameter space.
+
+4. Objective: Minimize \(J(\mathbf{W}, B)\) to find optimal values for parameters \(\mathbf{W}\) and \(B\).
+
+5. Illustration of gradient descent iterations to converge to the global minimum of \(J(\mathbf{W}, B)\).
+
+6. Learning rate (\(\alpha\)) controls step size in each iteration of gradient descent.
+
+7. Derivative (\(\nabla J(\mathbf{W}, B)\)) represents the slope of the cost function at a given point.
+
+8. Implementation of gradient descent update: \(\mathbf{W} \coloneqq \mathbf{W} - \alpha \nabla J(\mathbf{W}, B)\).
+
+9. Extension to logistic regression with parameters \(\mathbf{W}\) and \(B\): Update equations for both \(\mathbf{W}\) and \(B\).
+
+10. Note on calculus notation: Use of partial derivative symbol (\(\partial\)) for functions with multiple variables, and convention in code (\(\text{dw, db}\)) for update quantities.
