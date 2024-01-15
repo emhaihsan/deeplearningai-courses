@@ -102,3 +102,16 @@
 8. The formal definition of derivatives involves an infinitesimally small change in \(a\), but for simplicity, the text focuses on the practical concept of nudging \(a\) by 0.001.
 
 9. The function \(f(a) = 3a\) has a consistent slope of three at all points, demonstrating a constant rate of change regardless of the value of \(a\).
+
+## More Derivative Examples
+
+1. The video explores a more complex example where the slope of a function varies at different points.
+2. The example function is \(f(a) = a^2\), and the point \(a = 2\) is considered.
+3. Nudging \(a\) slightly to \(2.001\) results in \(f(a) \approx 4.004\), and the slope (\(d/da\)) at \(a = 2\) is found to be 4.
+4. The slope varies for different values of \(a\), as demonstrated with another point, \(a = 5\).
+5. A calculus textbook formula \(d/da(a^2) = 2a\) is introduced, consistent with the observed slopes at \(a = 2\) and \(a = 5\).
+6. Approximations are used to explain why \(4.004\) is close enough to the calculated value \(4.004001\).
+7. Several examples follow, including \(f(a) = a^3\) with a derivative formula \(d/da(a^3) = 3a^2\).
+8. Another example involves the logarithmic function \(f(a) = \log(a)\) with \(d/da(\log(a)) = 1/a\).
+9. Calculated values align with the predicted slopes using derivatives, reinforcing the understanding of slope variations.
+10. The two main takeaways are highlighted: derivatives represent the slope of a function, and they can vary at different points on the curve. Additionally, calculus textbooks provide formulas for finding derivatives.
