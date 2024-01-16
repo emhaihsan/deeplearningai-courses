@@ -115,3 +115,68 @@
 8. Another example involves the logarithmic function \(f(a) = \log(a)\) with \(d/da(\log(a)) = 1/a\).
 9. Calculated values align with the predicted slopes using derivatives, reinforcing the understanding of slope variations.
 10. The two main takeaways are highlighted: derivatives represent the slope of a function, and they can vary at different points on the curve. Additionally, calculus textbooks provide formulas for finding derivatives.
+
+## Computation Graph
+
+Here's a summary of the transcript:
+
+1. Neural network computations involve a forward pass (forward propagation) and a backward pass (backpropagation) for computing gradients or derivatives.
+2. The computation graph is introduced to explain the organization of these passes in neural network computations.
+3. An example function \( J \) is considered, which is a function of three variables \( a, b, \) and \( c \) (\( J = 3(a + bc) \)).
+4. The computation involves three steps: computing \( u = bc \), \( V = a \cdot u \), and \( J = 3V \).
+5. These steps are represented in a computation graph, with rectangles indicating the computations and arrows indicating the flow of data.
+6. The example values \( a = 5, b = 3, \) and \( c = 2 \) are used to illustrate the computation: \( J = 33 \).
+7. The computation graph is particularly useful when optimizing a distinguished output variable, such as the cost function (\( J \)) in logistic regression.
+8. The left-to-right pass in the computation graph computes the value of \( J \), and the next slides will discuss the right-to-left pass for computing derivatives.
+9. The computation graph organizes computations with a left-to-right flow of blue arrows.
+
+# Derivatives with a Computation Graph
+
+1. **Introduction to Computation Graphs and Derivative Calculation:**
+
+   - Explanation of using a computation graph to compute a function J.
+   - Focus on computing the derivative of J with respect to v.
+
+2. **Derivative of J with respect to v:**
+
+   - \(J = 3v\), where \(v = 11\).
+   - Derivative of \(J\) with respect to \(v\) is \(3\).
+
+3. **Analogy to Previous Example and Chain Rule:**
+
+   - Drawing parallels with a previous example (\(f(a) = 3a\)).
+   - Introduction to the chain rule and its application in backpropagation.
+
+4. **Derivative of J with respect to a:**
+
+   - \(a = 5\), and bumping it to \(5.001\).
+   - Derivative of \(J\) with respect to \(a\) is \(3\).
+
+5. **Chain Rule Illustration:**
+
+   - Explanation of how changing \(a\) affects \(v\), which in turn affects \(J\).
+   - Introduction to the chain rule in calculus.
+
+6. **Notational Convention in Backpropagation:**
+
+   - Introduction of a notational convention for final output variable \(J\) in backpropagation code.
+   - Use of \(dvar\) for \(\frac{dJ}{dvar}\) in code.
+
+7. **Backpropagation through Computation Graph:**
+
+   - Implementation of backpropagation with examples (\(dv = 3\) and \(da = 3\)).
+
+8. **Derivative of J with respect to u:**
+
+   - Computation of \(\frac{dJ}{du}\) using a similar approach as before.
+   - Result: \(\frac{dJ}{du} = 3\).
+
+9. **Derivative of J with respect to b:**
+
+   - Use of the chain rule to compute \(\frac{dJ}{db}\).
+   - Result: \(\frac{dJ}{db} = 6\).
+
+10. **Conclusion and Key Takeaway:**
+    - Efficient computation of derivatives using a right-to-left approach.
+    - Forward calculation for cost function, backward calculation for derivatives.
+    - Reference to upcoming video on logistic regression for further clarification.
