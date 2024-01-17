@@ -103,7 +103,7 @@
 
 9. The function \(f(a) = 3a\) has a consistent slope of three at all points, demonstrating a constant rate of change regardless of the value of \(a\).
 
-## More Derivative Examples
+### More Derivative Examples
 
 1. The video explores a more complex example where the slope of a function varies at different points.
 2. The example function is \(f(a) = a^2\), and the point \(a = 2\) is considered.
@@ -116,7 +116,7 @@
 9. Calculated values align with the predicted slopes using derivatives, reinforcing the understanding of slope variations.
 10. The two main takeaways are highlighted: derivatives represent the slope of a function, and they can vary at different points on the curve. Additionally, calculus textbooks provide formulas for finding derivatives.
 
-## Computation Graph
+### Computation Graph
 
 Here's a summary of the transcript:
 
@@ -180,3 +180,16 @@ Here's a summary of the transcript:
     - Efficient computation of derivatives using a right-to-left approach.
     - Forward calculation for cost function, backward calculation for derivatives.
     - Reference to upcoming video on logistic regression for further clarification.
+
+### Logistic Regression Gradient Descent
+
+1. Define logistic regression predictions as \( \hat{Y} \) using \( Z \), where \( Z = W_1X_1 + W_2X_2 + B \).
+2. Loss for one example \( L \) is calculated as \( L(A, Y) \), where \( A \) is the output and \( Y \) is the ground truth label.
+3. Computation graph steps: \( Z \) is computed, followed by \( A = \sigma(Z) \), and then \( L = AY \).
+4. Objective: Modify parameters \( W \) and \( B \) to minimize the loss.
+5. Derivative of loss with respect to \( A \): \( \frac{\partial L}{\partial A} = -\frac{Y}{A} + \frac{1 - Y}{1 - A} \).
+6. Compute \( \frac{\partial L}{\partial Z} = A - Y \) using chain rule.
+7. Derivatives for parameters: \( \frac{\partial L}{\partial W_1} = X_1 \frac{\partial Z}{\partial W_1} \), \( \frac{\partial L}{\partial W_2} = X_2 \frac{\partial Z}{\partial W_2} \), \( \frac{\partial L}{\partial B} = \frac{\partial Z}{\partial B} \).
+8. Update rules for parameters: \( W_1 \leftarrow W_1 - \alpha \frac{\partial L}{\partial W_1} \), \( W_2 \leftarrow W_2 - \alpha \frac{\partial L}{\partial W_2} \), \( B \leftarrow B - \alpha \frac{\partial L}{\partial B} \), where \( \alpha \) is the learning rate.
+9. These steps constitute one iteration of gradient descent for a single training example.
+10. To extend to multiple examples, the process involves iterating over the entire training set in the subsequent video.
