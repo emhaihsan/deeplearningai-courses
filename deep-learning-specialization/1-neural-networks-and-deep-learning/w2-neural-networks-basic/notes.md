@@ -193,3 +193,20 @@ Here's a summary of the transcript:
 8. Update rules for parameters: \( W_1 \leftarrow W_1 - \alpha \frac{\partial L}{\partial W_1} \), \( W_2 \leftarrow W_2 - \alpha \frac{\partial L}{\partial W_2} \), \( B \leftarrow B - \alpha \frac{\partial L}{\partial B} \), where \( \alpha \) is the learning rate.
 9. These steps constitute one iteration of gradient descent for a single training example.
 10. To extend to multiple examples, the process involves iterating over the entire training set in the subsequent video.
+
+## Gradient Descent on m examples
+
+1. Cost function \( J \) for logistic regression with \( m \) training examples is defined as the average of individual losses: \[ J(w, b) = \frac{1}{m} \sum\_{i=1}^{m} \text{Loss}(a_i, y_i) \].
+2. Prediction for the \( i \)-th training example: \( a_i = \sigma(z_i) \), where \( z_i = w^Tx_i + b \).
+3. Derivatives for a single training example: \( dw*{1i} \), \( dw*{2i} \), \( db_i \) computed as shown in the previous slide.
+4. Overall gradient is the average of individual derivatives: \[ \frac{\partial J}{\partial w*1} = \frac{1}{m} \sum*{i=1}^{m} dw\_{1i} \].
+5. Algorithm initialization: \( J = 0 \), \( dw_1 = 0 \), \( dw_2 = 0 \), \( db = 0 \).
+6. For each training example \( i \) in the loop:
+   - Compute \( z_i \) and \( a_i \).
+   - Update \( J \) with the loss term.
+   - Compute \( dz_i = a_i - y_i \).
+   - Accumulate derivatives: \( dw*{1} += x*{1i} dz*i \), \( dw*{2} += x\_{2i} dz_i \), \( db += dz_i \).
+7. After the loop, divide derivatives by \( m \) to compute averages: \( dw*{1} /= m \), \( dw*{2} /= m \), \( db /= m \).
+8. Update parameters using gradient descent: \[ w*1 \leftarrow w_1 - \alpha \cdot dw*{1} \], \( w*2 \leftarrow w_2 - \alpha \cdot dw*{2} \), \( b \leftarrow b - \alpha \cdot db \).
+9. Repeat the steps for multiple iterations to optimize parameters.
+10. Note the importance of vectorization to avoid explicit for-loops for efficient implementation, especially in deep learning with large datasets.
