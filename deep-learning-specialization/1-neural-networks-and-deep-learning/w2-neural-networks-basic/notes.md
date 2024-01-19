@@ -210,3 +210,16 @@ Here's a summary of the transcript:
 8. Update parameters using gradient descent: \[ w*1 \leftarrow w_1 - \alpha \cdot dw*{1} \], \( w*2 \leftarrow w_2 - \alpha \cdot dw*{2} \), \( b \leftarrow b - \alpha \cdot db \).
 9. Repeat the steps for multiple iterations to optimize parameters.
 10. Note the importance of vectorization to avoid explicit for-loops for efficient implementation, especially in deep learning with large datasets.
+
+### Vectorization
+
+1. Vectorization eliminates explicit for loops in code.
+2. Training deep learning algorithms on large datasets is common in the deep learning era.
+3. Code efficiency is crucial for quick results when dealing with large datasets.
+4. Vectorization is a key skill in deep learning, enhancing code performance.
+5. Logistic regression involves computing \( Z = W^TX + B \) where \( W \) and \( X \) are large vectors.
+6. Non-vectorized implementation of logistic regression involves explicit for loops and can be slow.
+7. Vectorized implementation directly computes \( W^TX \) using numpy, resulting in faster execution.
+8. A demonstration in a Jupyter notebook shows vectorized code significantly outperforming non-vectorized code.
+9. The vectorized version took around 1.5 milliseconds, while the non-vectorized version took about 500 milliseconds.
+10. Vectorization is crucial for speeding up code, and parallelization instructions benefit both CPU and GPU computations.
