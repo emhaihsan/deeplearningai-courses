@@ -223,3 +223,16 @@ Here's a summary of the transcript:
 8. A demonstration in a Jupyter notebook shows vectorized code significantly outperforming non-vectorized code.
 9. The vectorized version took around 1.5 milliseconds, while the non-vectorized version took about 500 milliseconds.
 10. Vectorization is crucial for speeding up code, and parallelization instructions benefit both CPU and GPU computations.
+
+### More Vectorization Examples
+
+1. Vectorization is emphasized for speeding up code in neural network and regression programming.
+2. The rule of thumb is to avoid explicit for-loops whenever possible in programming neural networks or regression.
+3. Example: Computing a vector \( \mathbf{u} \) from the matrix \( \mathbf{A} \) and vector \( \mathbf{v} \) can be efficiently done using the vectorized implementation \( \mathbf{u} = \text{np.dot}(A, v) \).
+4. Another example involves applying the exponential operation on each element of a vector \( \mathbf{v} \), where the vectorized version is \( \mathbf{u} = \text{np.exp}(v) \).
+5. NumPy provides built-in functions for various vector operations, eliminating the need for explicit for-loops.
+6. Applying vectorization concepts to logistic regression gradient descent, the goal is to eliminate one of the two for-loops in the derivative computation.
+7. Instead of initializing individual components to zeros, use a vectorized approach by setting \( \text{dw} = \text{np.zeros}(\text{nx} \times 1) \).
+8. Update \( \text{dw} \) using vectorized operations, reducing the code from two for-loops to one.
+9. The video suggests that eliminating for-loops through vectorization improves code efficiency.
+10. The next video will explore further vectorization of logistic regression, revealing a surprising result of processing entire training sets without using any for-loops.
