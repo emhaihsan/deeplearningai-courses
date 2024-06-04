@@ -2,4 +2,4 @@
 .ipynb_checkpoints
 tes.ipynb
 openai_test.py
-__pycache__
+__pycache__/
