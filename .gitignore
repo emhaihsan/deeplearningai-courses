@@ -2,10 +2,6 @@
 .ipynb_checkpoints
 tes.ipynb
 openai_test.py
-<<<<<<< HEAD
 __pycache__/
 
 .env
-=======
-__pycache__
->>>>>>> parent of 524b56b (minor fix)
